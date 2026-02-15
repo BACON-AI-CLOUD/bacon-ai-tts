@@ -22,21 +22,44 @@
 > **Warning**
 > This project is currently in **Alpha testing**. It is functional and actively used in development, but you may encounter bugs, rough edges, or breaking changes between releases. Feedback, bug reports, and contributions are very welcome! Please [open an issue](https://github.com/BACON-AI-CLOUD/bacon-ai-tts/issues) if you run into problems.
 
-> **⚠️ ALPHA STATUS**
-> This project is in active development. Features may change, and bugs are expected. Use in production at your own risk.
+---
+
+## Your AI Team Just Found Their Voice
+
+Picture this: You're juggling three projects across two machines. You step away to make coffee. From across the room, you hear a proper British accent:
+
+> *"Colin darling, I'm waiting for you. The test results are in and we need to discuss the deployment strategy."*
+
+That's **Elisabeth** (en-GB-SoniaNeural), your AI project lead. She runs the daily debrief, reports on project performance, SSC scores, lessons learned, and the self-annealing mitigations the team installed to prevent yesterday's bugs from ever happening again.
+
+You sit down. A cheerful Norwegian voice pipes up:
+
+> *"Wakey wakey Colin! We need your input here. The team achieved 47 tasks overnight but three need your approval."*
+
+That's **Finn** (nb-NO-FinnNeural), your team summarizer. He tells you what got done, what's blocked, and whether you should be impressed or worried. Usually both.
+
+Then **Katja** (de-DE-KatjaNeural) cuts in with her precise German engineering tone to explain a technical issue in the authentication module. **Giuseppe** (it-IT-GiuseppeNeural) follows up with the details of the integration test failures. **George** (en-AU-WilliamNeural) gives you the strategic debrief of today's plan.
+
+**This is not science fiction. This is Tuesday.**
+
+When you run multi-agent development teams with BACON-AI, each agent gets a unique international voice and personality. You don't stare at terminal logs - you *listen* to your team like a real project manager. Walk around, make lunch, pet the dog. Your AI team keeps you posted.
+
+And when the constant jabber drives you absolutely crazy? Switch to **beep mode** for subtle audio cues, or **silent mode** for blissful peace. Four voice modes to match your mood:
+
+| Mode | What You Hear |
+|------|--------------|
+| **Full** | Elisabeth narrates, Finn summarises, Katja explains, Giuseppe details |
+| **Tool-only** | Brief tool name announcements only |
+| **Beep** | Quick audio cues - *boop* task started, *ding* task done |
+| **Silent** | Nothing. Just you and the code |
+
+> *It's like being back in an international project team. Except these colleagues never take sick days, never argue about the thermostat, and actually read the documentation.*
 
 ---
 
-## 🎯 What is This?
+## What is BACON-AI TTS?
 
-**BACON-AI TTS** brings **unlimited, free, natural-sounding text-to-speech** to Claude Code and other MCP-compatible AI tools. No API keys, no subscriptions, no limits — just high-quality voice synthesis powered by Microsoft Edge's TTS engine.
-
-Perfect for:
-- 🔊 **Voice announcements** from Claude Code ("Starting build...", "Tests passed!")
-- ♿ **Accessibility** for visually impaired developers
-- 🌍 **Multi-language teams** (100+ languages supported)
-- 📢 **Voice notifications** for long-running tasks
-- 🎙️ **Audio content creation** from text
+**BACON-AI TTS** brings **unlimited, free, natural-sounding text-to-speech** to Claude Code and other MCP-compatible AI tools. No API keys, no subscriptions, no limits — just high-quality voice synthesis powered by Microsoft Edge's TTS engine. 400+ voices across 100+ languages, completely free, forever.
 
 ---
 
