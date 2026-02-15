@@ -24,36 +24,92 @@
 
 ---
 
-## Your AI Team Just Found Their Voice
+## Meet Your AI Project Team. They Talk.
 
-Picture this: You're juggling three projects across two machines. You step away to make coffee. From across the room, you hear a proper British accent:
+Picture this: You're running three AI coding projects across two machines. You step away to make coffee. From across the room, a proper British accent calls out:
 
 > *"Colin darling, I'm waiting for you. The test results are in and we need to discuss the deployment strategy."*
 
-That's **Elisabeth** (en-GB-SoniaNeural), your AI project lead. She runs the daily debrief, reports on project performance, SSC scores, lessons learned, and the self-annealing mitigations the team installed to prevent yesterday's bugs from ever happening again.
+That's **Elisabeth** (en-GB-SoniaNeural) - your Operations Coordinator. She announces every tool execution before it happens (*"Hello Colin, I'm about to run the test suite"*), delivers the daily project debrief, reports on SSC scores, lessons learned, and the self-annealing mitigations the team installed overnight to prevent yesterday's bugs from ever happening again. If you ignore her approval request for more than 30 seconds, she gets... persistent.
 
-You sit down. A cheerful Norwegian voice pipes up:
+You sit down. A cheerful Norwegian accent pipes up:
 
 > *"Wakey wakey Colin! We need your input here. The team achieved 47 tasks overnight but three need your approval."*
 
-That's **Finn** (nb-NO-FinnNeural), your team summarizer. He tells you what got done, what's blocked, and whether you should be impressed or worried. Usually both.
+That's **Finn** (nb-NO-FinnNeural) - your Innovation Lead. Every time a tool completes successfully, Finn confirms it. *"Hei Colin! Fantastisk! The build passed!"* He summarises what the team achieved and isn't afraid to tell you when something went wrong either.
 
-Then **Katja** (de-DE-KatjaNeural) cuts in with her precise German engineering tone to explain a technical issue in the authentication module. **Giuseppe** (it-IT-GiuseppeNeural) follows up with the details of the integration test failures. **George** (en-AU-WilliamNeural) gives you the strategic debrief of today's plan.
+Then **Katja** (de-DE-KatjaNeural), your Research Specialist, cuts in with her precise German tone to explain a notification about the authentication module. If a tool request sits unapproved too long, Katja will nudge you: *"Colin, excuse me, but there is a tool request waiting for your approval."* Very German. Very efficient.
 
-**This is not science fiction. This is Tuesday.**
+**Giuseppe** (it-IT-GiuseppeNeural) follows up with the research details of the integration failures - expressive, thorough, Italian. **George** (en-GB-RyanNeural), the Systems Architect, gives you the strategic debrief of today's architecture decisions. **Lily** (en-GB-LibbyNeural) acknowledges every prompt you submit: *"Brilliant Colin! Let's build something amazing."* **Connor** (en-IE-ConnorNeural), the Irish DevOps Engineer, handles the operational alerts and pre-compaction warnings. And **Daniel** (en-GB-ThomasNeural) runs QA inspection at shutdown.
 
-When you run multi-agent development teams with BACON-AI, each agent gets a unique international voice and personality. You don't stare at terminal logs - you *listen* to your team like a real project manager. Walk around, make lunch, pet the dog. Your AI team keeps you posted.
+**This is not science fiction. This is how we actually work. Every day.**
 
-And when the constant jabber drives you absolutely crazy? Switch to **beep mode** for subtle audio cues, or **silent mode** for blissful peace. Four voice modes to match your mood:
+### How It Actually Works
+
+The voice system is **hook-driven** - deeply integrated into Claude Code's event lifecycle:
+
+```mermaid
+flowchart LR
+    A["Claude Code Event"] --> B["Hook Trigger"]
+    B --> C{"Voice Mode?"}
+    C -->|Full| D["Select Persona"]
+    C -->|Tool-only| E["Brief Name Only"]
+    C -->|Beep| F["Audio Cue"]
+    C -->|Silent| G["Nothing"]
+
+    D --> H["Elisabeth: PreToolUse"]
+    D --> I["Finn: PostToolUse Success"]
+    D --> J["Katja: Notifications"]
+    D --> K["George: SubagentStop"]
+    D --> L["Lily: UserPromptSubmit"]
+    D --> M["Connor: PreCompact/Ops"]
+
+    H & I & J & K & L & M --> N["Edge TTS"] --> O["Audio Playback"]
+
+    style A fill:#e94560,stroke:#fff,color:#fff
+    style D fill:#0f3460,stroke:#fff,color:#fff
+    style N fill:#16c79a,stroke:#fff,color:#fff
+```
+
+Each persona is triggered by a specific Claude Code hook event - Elisabeth announces before every tool, Finn celebrates after success, Katja alerts on notifications, George reports on sub-agent completions. It's not random chatter - it's a **structured information architecture delivered through voice**.
+
+### The International Voice Team
+
+| Persona | Voice | Country | Hook Trigger | What They Do |
+|---------|-------|---------|-------------|-------------|
+| **Elisabeth** | en-GB-SoniaNeural | UK | PreToolUse | *"I'm about to execute..."* - announces every action before it happens |
+| **Lily** | en-GB-LibbyNeural | UK | UserPromptSubmit | *"Brilliant! Let's build..."* - acknowledges your prompts |
+| **Finn** | nb-NO-FinnNeural | Norway | PostToolUse | *"Fantastisk! Tests passed!"* - celebrates completions, summarises progress |
+| **George** | en-GB-RyanNeural | UK | SubagentStop | *"The architecture review is complete..."* - reports on sub-agent results |
+| **Katja** | de-DE-KatjaNeural | Germany | Notifications | *"Excuse me, there is a request waiting..."* - alerts and nudges |
+| **Connor** | en-IE-ConnorNeural | Ireland | PreCompact/Ops | *"Context window approaching limit..."* - operational warnings |
+| **Daniel** | en-GB-ThomasNeural | UK | Stop/QA | *"QA inspection complete..."* - quality checks at shutdown |
+| **Giuseppe** | it-IT-GiuseppeNeural | Italy | Research | *"The analysis reveals..."* - detailed research findings |
+
+### Multi-Agent Teams with Voice
+
+When you run [BACON-AI Agent Teams](https://github.com/BACON-AI-CLOUD/bacon-ai-mesh) with up to 10 specialized agents working in parallel, each agent gets their own voice persona. The team lead (Elisabeth) orchestrates in **delegate mode** - she never writes code, only coordinates. The frontend developer, backend developer, tester, and architect each report progress in their own international accent.
+
+You don't stare at terminal logs. You *listen* to your team like a real project manager. Walk around, make lunch, pet the dog. Your AI team keeps you posted across multiple machines.
+
+### When It Gets Too Much
+
+And when the constant international jabber drives you absolutely crazy? One command to switch modes:
+
+```bash
+python3 voice_config.py beep    # Subtle audio cues only
+python3 voice_config.py silent  # Blissful silence
+python3 voice_config.py full    # Bring back the team
+```
 
 | Mode | What You Hear |
 |------|--------------|
-| **Full** | Elisabeth narrates, Finn summarises, Katja explains, Giuseppe details |
-| **Tool-only** | Brief tool name announcements only |
+| **Full** | Elisabeth announces, Finn celebrates, Katja nudges, Giuseppe explains, George debriefs |
+| **Tool-only** | Brief tool name announcements - just the essentials |
 | **Beep** | Quick audio cues - *boop* task started, *ding* task done |
-| **Silent** | Nothing. Just you and the code |
+| **Silent** | Nothing. Just you and the code. The team works quietly |
 
-> *It's like being back in an international project team. Except these colleagues never take sick days, never argue about the thermostat, and actually read the documentation.*
+> *It's like being back in an international project team. Except these colleagues never take sick days, never argue about the thermostat, and actually read the documentation. And if you tell them to shut up, they don't take it personally.*
 
 ---
 
