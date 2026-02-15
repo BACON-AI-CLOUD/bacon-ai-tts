@@ -19,6 +19,9 @@
 
 ---
 
+> **Warning**
+> This project is currently in **Alpha testing**. It is functional and actively used in development, but you may encounter bugs, rough edges, or breaking changes between releases. Feedback, bug reports, and contributions are very welcome! Please [open an issue](https://github.com/BACON-AI-CLOUD/bacon-ai-tts/issues) if you run into problems.
+
 > **⚠️ ALPHA STATUS**
 > This project is in active development. Features may change, and bugs are expected. Use in production at your own risk.
 
