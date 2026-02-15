@@ -28,19 +28,19 @@
 
 Picture this: You're running three AI coding projects across two machines. You step away to make coffee. From across the room, a proper British accent calls out:
 
-> *"Colin darling, I'm waiting for you. The test results are in and we need to discuss the deployment strategy."*
+> *"Darling, I'm waiting for you. The test results are in and we need to discuss the deployment strategy."*
 
-That's **Elisabeth** (en-GB-SoniaNeural) - your Operations Coordinator. She announces every tool execution before it happens (*"Hello Colin, I'm about to run the test suite"*), delivers the daily project debrief, reports on SSC scores, lessons learned, and the self-annealing mitigations the team installed overnight to prevent yesterday's bugs from ever happening again. If you ignore her approval request for more than 30 seconds, she gets... persistent.
+That's **Elisabeth** (en-GB-SoniaNeural) - your Operations Coordinator. She announces every tool execution before it happens (*"Hello, I'm about to run the test suite"*), delivers the daily project debrief, reports on SSC scores, lessons learned, and the self-annealing mitigations the team installed overnight to prevent yesterday's bugs from ever happening again. If you ignore her approval request for more than 30 seconds, she gets... persistent.
 
 You sit down. A cheerful Norwegian accent pipes up:
 
-> *"Wakey wakey Colin! We need your input here. The team achieved 47 tasks overnight but three need your approval."*
+> *"Wakey wakey! We need your input here. The team achieved 47 tasks overnight but three need your approval."*
 
-That's **Finn** (nb-NO-FinnNeural) - your Innovation Lead. Every time a tool completes successfully, Finn confirms it. *"Hei Colin! Fantastisk! The build passed!"* He summarises what the team achieved and isn't afraid to tell you when something went wrong either.
+That's **Finn** (nb-NO-FinnNeural) - your Innovation Lead. Every time a tool completes successfully, Finn confirms it. *"Hei! Fantastisk! The build passed!"* He summarises what the team achieved and isn't afraid to tell you when something went wrong either.
 
-Then **Katja** (de-DE-KatjaNeural), your Research Specialist, cuts in with her precise German tone to explain a notification about the authentication module. If a tool request sits unapproved too long, Katja will nudge you: *"Colin, excuse me, but there is a tool request waiting for your approval."* Very German. Very efficient.
+Then **Katja** (de-DE-KatjaNeural), your Research Specialist, cuts in with her precise German tone to explain a notification about the authentication module. If a tool request sits unapproved too long, Katja will nudge you: *"Excuse me, but there is a tool request waiting for your approval."* Very German. Very efficient.
 
-**Giuseppe** (it-IT-GiuseppeNeural) follows up with the research details of the integration failures - expressive, thorough, Italian. **George** (en-GB-RyanNeural), the Systems Architect, gives you the strategic debrief of today's architecture decisions. **Lily** (en-GB-LibbyNeural) acknowledges every prompt you submit: *"Brilliant Colin! Let's build something amazing."* **Connor** (en-IE-ConnorNeural), the Irish DevOps Engineer, handles the operational alerts and pre-compaction warnings. And **Daniel** (en-GB-ThomasNeural) runs QA inspection at shutdown.
+**Giuseppe** (it-IT-GiuseppeNeural) follows up with the research details of the integration failures - expressive, thorough, Italian. **George** (en-GB-RyanNeural), the Systems Architect, gives you the strategic debrief of today's architecture decisions. **Lily** (en-GB-LibbyNeural) acknowledges every prompt you submit: *"Brilliant! Let's build something amazing."* **Connor** (en-IE-ConnorNeural), the Irish DevOps Engineer, handles the operational alerts and pre-compaction warnings. And **Daniel** (en-GB-ThomasNeural) runs QA inspection at shutdown.
 
 **This is not science fiction. This is how we actually work. Every day.**
 
@@ -326,7 +326,7 @@ npm start    # or: python -m edge_tts_mcp
 ```python
 # From Claude Code (Claude calls this automatically)
 edge-tts:text_to_speech(
-    text="Hello Colin, starting the build process now.",
+    text="Hello, starting the build process now.",
     voice_name="en-GB-SoniaNeural"
 )
 ```
@@ -652,10 +652,10 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ### Contact
 
-- **Creator:** Colin Bacon
-- **Email:** colin@bacon-ai.com
-- **GitHub:** [@bacon-ai](https://github.com/bacon-ai)
-- **Website:** [bacon-ai.com](https://bacon-ai.com)
+- **Created by:** BACON-AI Team
+- **Email:** hello@bacon-ai.cloud
+- **GitHub:** [@BACON-AI-CLOUD](https://github.com/BACON-AI-CLOUD)
+- **Website:** [bacon-ai.cloud](https://bacon-ai.cloud)
 
 ---
 
